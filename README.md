@@ -18,6 +18,17 @@ Most of my work happens where "sysadmin" and "developer" overlap: a fleet of Lin
 
 **[status-server](https://github.com/X4Applegate/status-server)** — a multi-tenant server and network status monitoring platform. Separate branded dashboards for different teams or clients, each with their own login and server visibility, from a single deployment.
 
+### 🏗️ What I run
+
+The projects above exist because I needed them. Day to day I operate a self-hosted estate of around seven Linux servers plus VPS hosting, all containerised with Docker and managed through Portainer:
+
+- **Networking** — multi-site enterprise wireless and routing, site-to-site WireGuard, VLAN segmentation, and filtering DNS resolvers at every location
+- **Platform** — Caddy as the edge for every service, MariaDB and SQLite, Nextcloud, a private Matrix homeserver, and a mail server
+- **Reliability** — a nightly encrypted 3-2-1 backup pipeline across the whole fleet to local and offsite object storage, with monitoring and status pages in front of it
+- **Automation** — workflow automation, alerting into chat, and self-hosted LLM inference on local hardware as an offline fallback
+
+That's the environment CaddyUI was built in, and why it's aimed at people running fleets rather than a single box.
+
 ### 🛠️ What I work with
 
 `Go` · `Node.js` · `Caddy` · `Docker` · `Portainer` · `MariaDB` · `SQLite` · `Omada` · `WireGuard` · `Nextcloud` · `n8n` · `Grafana` · `Ubuntu`
